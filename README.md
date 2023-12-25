@@ -8,5 +8,5 @@
 ## Installation
 
 ```
-Install-Package Soenneker.Facts.Manual
+dotnet add package Soenneker.Facts.Manual
 ```
