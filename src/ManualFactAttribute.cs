@@ -12,14 +12,11 @@ public class ManualFactAttribute : FactAttribute
 
     public string? Reason { get; set; }
 
-    public override string Skip
+    public ManualFactAttribute()
     {
-        get
-        {
-            if (Reason != null)
-                return $"{_default}:{Reason}";
+        if (Reason != null)
+            Skip = $"{_default}:{Reason}";
 
-            return _default;
-        }
+        Skip = _default;
     }
 }
