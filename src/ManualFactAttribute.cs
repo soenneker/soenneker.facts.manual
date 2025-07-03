@@ -6,7 +6,7 @@ namespace Soenneker.Facts.Manual;
 /// An xUnit Fact attribute derivation that when used to decorate a method it skips the test <para/>
 /// Replace with [Fact] to run test the test manually.
 /// </summary>
-public class ManualFactAttribute : FactAttribute
+public sealed class ManualFactAttribute : FactAttribute
 {
     private const string _default = "ManualFact";
 
