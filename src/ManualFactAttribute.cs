@@ -10,13 +10,10 @@ public sealed class ManualFactAttribute : FactAttribute
 {
     private const string _default = "ManualFact";
 
-    public string? Reason { get; set; }
-
-    public ManualFactAttribute()
+    public ManualFactAttribute(string? reason = null)
     {
-        if (Reason != null)
-            Skip = $"{_default}:{Reason}";
-
-        Skip = _default;
+        Skip = string.IsNullOrEmpty(reason)
+            ? _default
+            : string.Concat(_default, ":", reason);
     }
 }
