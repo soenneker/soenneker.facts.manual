@@ -15,7 +15,7 @@
         </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Facts.Manual.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Facts.Manual\Soenneker.Facts.Manual.csproj" />
     </ItemGroup>
 
     <ItemGroup>
